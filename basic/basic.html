@@ -1,0 +1,339 @@
+<html>
+<head>
+	<link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+	<style>
+
+
+		.super-container{
+			margin-top: 100px;;
+		}
+
+		.element{
+			/* Fallback for web browsers that doesn't support RGBa */
+			background: rgb(0, 0, 0) transparent;
+			/* RGBa with 0.6 opacity */
+			background: rgba(0, 0, 0, 0.6);
+			/* For IE 5.5 - 7*/
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+			/* For IE 8*/
+			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+		}
+		body{
+			background-image: url('./articles/public/assets/img/bg.jpg');
+			background-repeat:no-repeat ;
+			background-size: cover;
+			font-family: Ubuntu, Arial, 'libra sans', sans-serif;
+		}
+
+		.navbar{
+			min-height: 70px;
+		}
+
+		.navbar-brand{
+			text-align: center;
+			/*float: inherit;*/
+		}
+
+		.brand{
+			position: absolute;
+			width: 100%;
+			left: 0;
+			text-align: center;
+			margin: auto;
+		}
+
+		.brand a{
+			/*height: 50px;*/
+			padding: 25px 25px;
+			/*padding-top: 15px;*/
+			font-size: 28px;
+			line-height: 20px;
+			text-decoration: none;
+			color:white;
+			box-sizing: border-box;
+			display:inline-block;
+		}
+
+		.ui{
+			width:100%;
+			padding-top: 5px;
+		}
+
+		.noborder{
+			border:0px;
+		}
+
+
+		input[type=checkbox]#air + label[for=air]{
+			background-image: url(./articles/public/assets/img/air.png);
+			background-repeat: no-repeat;
+			background-size: 50px 50px;
+		}
+		input[type=checkbox]#water + label[for=water]{
+			background-image: url(./articles/public/assets/img/water.png);
+			background-repeat: no-repeat;
+			background-size: 50px 50px;
+		}
+		input[type=checkbox]#snow + label[for=snow]{
+			background-image: url(./articles/public/assets/img/snow.png);
+			background-repeat: no-repeat;
+			background-size: 50px 50px;
+		}
+		input[type=checkbox]#land + label[for=land]{
+			background-image: url(./articles/public/assets/img/land.png);
+			background-repeat: no-repeat;
+			background-size: 50px 50px;
+		}
+
+		input[type=checkbox] {
+			display:none;
+		}
+
+		input[type=checkbox] + label{
+			/*background: #999;*/
+			/*height: 70px;*/
+			/*width: 70px;*/
+			display:inline-block;
+			padding: 0 0 0 0px;
+		}
+		input[type=checkbox]:checked + label{
+			/*background: #0080FF;*/
+			/*height: 70px;*/
+			/*width: 70px;*/
+			display:inline-block;
+			padding: 0 0 0 0px;
+			-webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+			-moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+			box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+		}
+		.circle {
+			float: none;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50px;
+			height: 50px;
+			/*background: red;*/
+			-moz-border-radius: 25px;
+			-webkit-border-radius: 25px;
+			border-radius: 25px;
+			background-position: center;
+		}
+
+		.ui-title{
+			text-decoration: none;
+			color: white;
+			text-align: center;
+			list-style: none;
+		}
+
+		#activity{
+			width: 100%;
+			margin: 0; padding: 0; border: 0;
+			display: block;
+			height:48px;
+			color: white;
+			-moz-border-radius: 4px;
+			-webkit-border-radius: 4px;
+			border-radius: 4px;
+			font-size: 22px;
+		}
+
+		.marginer{
+			margin-bottom: 20px;
+		}
+
+		.round-button {
+			display:block;
+			width:50px;
+			height:50px;
+			line-height:50px;
+			/*border: 2px solid #f5f5f5;*/
+			border-radius: 50%;
+			color:#f5f5f5;
+			text-align:center;
+			text-decoration:none;
+			/*background: #464646;*/
+			box-shadow: 0 0 3px gray;
+			font-size:20px;
+			/*font-weight:bold;*/
+		}
+		.round-button:hover {
+			background: #262626;
+			text-decoration: none;
+		}
+
+		.col-centered{
+			float: none;
+			margin: 0 auto;
+		}
+
+		.center-block { float: none; }
+
+		.glossy-border{
+			border: 1px solid rgb(255, 255, 255);
+			border: 1px solid rgba(255, 255, 255, .5);
+			-webkit-background-clip: padding-box; /* for Safari */
+			background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+		}
+
+	</style>
+</head>
+<body>
+<nav class="navbar noborder navbar-default element" role="navigation">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="brand">
+			<a>Alien Adventures</a>
+		</div>
+	</div>
+</nav>
+<div class="super-container container">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+			<div class="well noborder element ui">
+
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12">
+							<h4 class="ui-title">Find your Adventure</h4>
+						</div>
+					</div>
+					<div class="row">
+						<!--<div class="span12">-->
+						<!--<div class="row-fluid">-->
+						<div class="col-md-3 col-xs-3 col-sm-3">
+							<input type="checkbox" id='air' ng-model="types.air" value="air" name="air" >
+							<label for="air" class="circle"></label>
+						</div>
+						<div class="col-md-3 col-xs-3 col-sm-3">
+							<input type="checkbox" id='water' ng-model="types.water" checked value="water" name="water">
+							<label for="water" class="circle"></label>
+						</div>
+						<div class="col-md-3 col-xs-3 col-sm-3">
+							<input type="checkbox" id='snow' ng-model="types.snow" value="snow" name="snow">
+							<label for="snow" class="circle"></label>
+						</div>
+						<div class="col-md-3 col-xs-3 col-sm-3">
+							<input type="checkbox" id='land' ng-model="types.land" value="land" name="land">
+							<label for="land" class="circle"></label>
+							<!--</div>-->
+							<!--</div>-->
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="row marginer">
+		<div class="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+			<!--<div class="well element ui">-->
+
+			<!--<div class="container-fluid">-->
+			<!--<div class="row">-->
+			<!--<div class="col-md-12">-->
+			<input class="element" id=activity type="text" ng-model="result" typeahead="suggestion as suggestion.event + ', '+ suggestion.city for suggestion in events | filter:$viewValue">
+			<!--</div>-->
+			<!--</div>-->
+			<!--</div>-->
+
+			<!--</div>-->
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-2 col-md-offset-4 col-xs-4 col-xs-offset-2 col-sm-3 col-sm-offset-3">
+			<div class="well noborder element ui">
+
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<h4 class="ui-title">Days</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-xs-6 col-sm-6">
+							<li class="ui-title">3</li>
+						</div>
+						<div class="col-md-6 col-xs-6 col-sm-6">
+							<li class="ui-title">5</li>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="col-md-2 col-xs-4 col-sm-3">
+			<div class="well noborder element ui">
+
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<h4 class="ui-title">USD</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-xs-6 col-sm-6 ">
+							<li class="ui-title">200</li>
+						</div>
+						<div class="col-md-6 col-xs-6 col-sm-6">
+							<li class="ui-title">500</li>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+			<!--<div class="well element ui">-->
+
+			<!--<input type="button" value="Go" >-->
+			<div class="row">
+				<div class="col-md-2 col-md-offset-4 center-block col-xs-2 col-xs-offset-4 col-sm-2 col-sm-offset-4">
+
+					<a href="#" class="ui-title round-button element" data-ng-click="find()">Go</a>
+
+				</div>
+			</div>
+
+			<!--</div>-->
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+
+<script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+<script type="text/javascript" src="./bower_components/angular/angular.js"></script>
+
+<script type="text/javascript" src="./bower_components/angular-mocks/angular-mocks.js"></script>
+
+<script type="text/javascript" src="./bower_components/angular-cookies/angular-cookies.js"></script>
+
+<script type="text/javascript" src="./bower_components/angular-resource/angular-resource.js"></script>
+
+<script type="text/javascript" src="./bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+<script type="text/javascript" src="./bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+
+<script type="text/javascript" src="./bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+
+<!--<script type="text/javascript" src="/modules/aggregated.js"></script>-->
+
+
+<!-- Livereload script rendered -->
+<!--<script type="text/javascript" src="//localhost:35729/livereload.js"></script>-->
+
+
+</body>
+</html>
