@@ -27,3 +27,9 @@ You will have to create a sample dataset to work with (about 30 searchable entri
     Water - scuba - andaman 
 
 Make assumptions on DB schema that your search call should search and find the offer IDs.
+
+
+How to run:
+1. cd into `basic` folder
+2. execute this command `python -m SimpleHTTPServer`
+3. Open url `localhost:8000`
