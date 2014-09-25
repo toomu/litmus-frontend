@@ -30,6 +30,8 @@ Make assumptions on DB schema that your search call should search and find the o
 
 
 How to run:
-1. cd into `basic` folder
-2. execute this command `python -m SimpleHTTPServer`
-3. Open url `localhost:8000`
+1. cd into parent folder
+2. install node and then 'npm install'
+3. run command 'node app.js'
+3. Open url `http://localhost:8000/basic.html`
+4. Incase you want to add more entries to database, update them in dbReset.mongo
