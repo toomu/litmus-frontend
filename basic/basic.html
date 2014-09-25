@@ -4,37 +4,38 @@
 	<style>
 
 
-		.super-container{
+		.super-container {
 			margin-top: 100px;;
 		}
 
-		.element{
+		.element, .location ul{
 			/* Fallback for web browsers that doesn't support RGBa */
 			background: rgb(0, 0, 0) transparent;
 			/* RGBa with 0.6 opacity */
 			background: rgba(0, 0, 0, 0.6);
 			/* For IE 5.5 - 7*/
-			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
 			/* For IE 8*/
 			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 		}
-		body{
+
+		body {
 			background-image: url('./articles/public/assets/img/bg.jpg');
-			background-repeat:no-repeat ;
+			background-repeat: no-repeat;
 			background-size: cover;
 			font-family: Ubuntu, Arial, 'libra sans', sans-serif;
 		}
 
-		.navbar{
+		.navbar {
 			min-height: 70px;
 		}
 
-		.navbar-brand{
+		.navbar-brand {
 			text-align: center;
 			/*float: inherit;*/
 		}
 
-		.brand{
+		.brand {
 			position: absolute;
 			width: 100%;
 			left: 0;
@@ -42,70 +43,74 @@
 			margin: auto;
 		}
 
-		.brand a{
+		.brand a {
 			/*height: 50px;*/
 			padding: 25px 25px;
 			/*padding-top: 15px;*/
 			font-size: 28px;
 			line-height: 20px;
 			text-decoration: none;
-			color:white;
+			color: white;
 			box-sizing: border-box;
-			display:inline-block;
+			display: inline-block;
 		}
 
-		.ui{
-			width:100%;
+		.ui {
+			width: 100%;
 			padding-top: 5px;
 		}
 
-		.noborder{
-			border:0px;
+		.noborder {
+			border: 0px;
 		}
 
-
-		input[type=checkbox]#air + label[for=air]{
+		input[type=checkbox]#air + label[for=air] {
 			background-image: url(./articles/public/assets/img/air.png);
 			background-repeat: no-repeat;
 			background-size: 50px 50px;
 		}
-		input[type=checkbox]#water + label[for=water]{
+
+		input[type=checkbox]#water + label[for=water] {
 			background-image: url(./articles/public/assets/img/water.png);
 			background-repeat: no-repeat;
 			background-size: 50px 50px;
 		}
-		input[type=checkbox]#snow + label[for=snow]{
+
+		input[type=checkbox]#snow + label[for=snow] {
 			background-image: url(./articles/public/assets/img/snow.png);
 			background-repeat: no-repeat;
 			background-size: 50px 50px;
 		}
-		input[type=checkbox]#land + label[for=land]{
+
+		input[type=checkbox]#land + label[for=land] {
 			background-image: url(./articles/public/assets/img/land.png);
 			background-repeat: no-repeat;
 			background-size: 50px 50px;
 		}
 
 		input[type=checkbox] {
-			display:none;
+			display: none;
 		}
 
-		input[type=checkbox] + label{
+		input[type=checkbox] + label {
 			/*background: #999;*/
 			/*height: 70px;*/
 			/*width: 70px;*/
-			display:inline-block;
+			display: inline-block;
 			padding: 0 0 0 0px;
 		}
-		input[type=checkbox]:checked + label{
+
+		input[type=checkbox]:checked + label {
 			/*background: #0080FF;*/
 			/*height: 70px;*/
 			/*width: 70px;*/
-			display:inline-block;
+			display: inline-block;
 			padding: 0 0 0 0px;
 			-webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
 			-moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
 			box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
 		}
+
 		.circle {
 			float: none;
 			margin-left: auto;
@@ -119,18 +124,20 @@
 			background-position: center;
 		}
 
-		.ui-title{
+		.ui-title {
 			text-decoration: none;
 			color: white;
 			text-align: center;
 			list-style: none;
 		}
 
-		#activity{
+		#activity {
 			width: 100%;
-			margin: 0; padding: 0; border: 0;
+			margin: 0;
+			padding: 0;
+			border: 0;
 			display: block;
-			height:48px;
+			height: 48px;
 			color: white;
 			-moz-border-radius: 4px;
 			-webkit-border-radius: 4px;
@@ -138,38 +145,49 @@
 			font-size: 22px;
 		}
 
-		.marginer{
+		.location ul > li > a {
+			color: white!important;
+		}
+
+		.location ul{
+			width:90%;
+		}
+
+		.marginer {
 			margin-bottom: 20px;
 		}
 
 		.round-button {
-			display:block;
-			width:50px;
-			height:50px;
-			line-height:50px;
+			display: block;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
 			/*border: 2px solid #f5f5f5;*/
 			border-radius: 50%;
-			color:#f5f5f5;
-			text-align:center;
-			text-decoration:none;
+			color: #f5f5f5;
+			text-align: center;
+			text-decoration: none;
 			/*background: #464646;*/
 			box-shadow: 0 0 3px gray;
-			font-size:20px;
+			font-size: 20px;
 			/*font-weight:bold;*/
 		}
+
 		.round-button:hover {
 			background: #262626;
 			text-decoration: none;
 		}
 
-		.col-centered{
+		.col-centered {
 			float: none;
 			margin: 0 auto;
 		}
 
-		.center-block { float: none; }
+		.center-block {
+			float: none;
+		}
 
-		.glossy-border{
+		.glossy-border {
 			border: 1px solid rgb(255, 255, 255);
 			border: 1px solid rgba(255, 255, 255, .5);
 			-webkit-background-clip: padding-box; /* for Safari */
@@ -178,7 +196,7 @@
 
 	</style>
 </head>
-<body>
+<body ng-app="myApp" data-ng-controller="mainController">
 <nav class="navbar noborder navbar-default element" role="navigation">
 	<div class="container-fluid">
 		<!-- Brand and toggle get grouped for better mobile display -->
@@ -202,7 +220,7 @@
 						<!--<div class="span12">-->
 						<!--<div class="row-fluid">-->
 						<div class="col-md-3 col-xs-3 col-sm-3">
-							<input type="checkbox" id='air' ng-model="types.air" value="air" name="air" >
+							<input type="checkbox" id='air' ng-model="types.air" value="air" name="air">
 							<label for="air" class="circle"></label>
 						</div>
 						<div class="col-md-3 col-xs-3 col-sm-3">
@@ -227,13 +245,13 @@
 	</div>
 
 	<div class="row marginer">
-		<div class="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+		<div class="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 location">
 			<!--<div class="well element ui">-->
 
 			<!--<div class="container-fluid">-->
 			<!--<div class="row">-->
 			<!--<div class="col-md-12">-->
-			<input class="element" id=activity type="text" ng-model="result" typeahead="suggestion as suggestion.event + ', '+ suggestion.city for suggestion in events | filter:$viewValue">
+			<input class="element" id=activity type="text" ng-model="result" placeholder="type location.." typeahead="suggestion as suggestion.event + ', '+ suggestion.city for suggestion in events | filter:$viewValue">
 			<!--</div>-->
 			<!--</div>-->
 			<!--</div>-->
@@ -295,7 +313,7 @@
 			<div class="row">
 				<div class="col-md-2 col-md-offset-4 center-block col-xs-2 col-xs-offset-4 col-sm-2 col-sm-offset-4">
 
-					<a href="#" class="ui-title round-button element" data-ng-click="find()">Go</a>
+					<a href="" class="ui-title round-button element" data-ng-click="find()">Go</a>
 
 				</div>
 			</div>
@@ -305,8 +323,6 @@
 	</div>
 
 </div>
-
-
 
 
 <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
@@ -327,6 +343,7 @@
 
 <script type="text/javascript" src="./bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 
+<script type="text/javascript" src="./articles/js/app.js"></script>
 
 <!--<script type="text/javascript" src="/modules/aggregated.js"></script>-->
 
