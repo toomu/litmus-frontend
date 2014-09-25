@@ -18,7 +18,7 @@ app.engine('html', engines.mustache);
 app.set('view engine', 'html');
 app.use(express.static(__dirname + '/views'));
 
-var port = process.env.PORT || 8000; 		// set our port
+var port = process.env.PORT 	// set our port
 
 // ROUTES FOR OUR API
 // =============================================================================
