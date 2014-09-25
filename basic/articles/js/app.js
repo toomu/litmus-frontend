@@ -48,7 +48,15 @@ angular.module('myApp').controller('mainController', function ($scope) {
             { city: 'Bangalore', 'event': 'Swimming', 'price': '1000', days: '1', type: 'water'},
             { city: 'Hyderabad', 'event': 'Swimming', 'price': '1000', days: '1', type: 'water'},
             { city: 'Melbourne', 'event': 'Desert ride', 'price': '1000', days: '1', type: 'land'},
-            { city: 'Sydney', 'event': 'Swimming', 'price': '5000', days: '1', type: 'water'}
+            { city: 'Sydney', 'event': 'Swimming', 'price': '5000', days: '1', type: 'water'},
+            { city: 'Sydney', 'event': 'Skiing', 'price': '5000', days: '1', type: 'snow'},
+            { city: 'Dubai', 'event': 'Paragliding', 'price': '5000', days: '1', type: 'air'},
+            { city: 'Tokyo', 'event': 'Skydiving', 'price': '5000', days: '1', type: 'air'},
+            { city: 'Delhi', 'event': 'Go karting', 'price': '5000', days: '1', type: 'land'},
+            { city: 'Manila', 'event': 'Mountain Biking', 'price': '5000', days: '1', type: 'land'},
+            { city: 'Moscow', 'event': 'Ice Climbing', 'price': '5000', days: '1', type: 'snow'},
+            { city: 'Gotham', 'event': 'Shooting', 'price': '5000', days: '1', type: 'land'},
+            { city: 'Bangalore', 'event': 'paintball', 'price': '5000', days: '1', type: 'land'}
         ];
 
         return $http({method: 'GET', url: '/getEvents', params: {
