@@ -41,6 +41,10 @@ angular.module('myApp').controller('mainController', function ($scope) {
             }
         }
 
+        if(types.length==0){
+            return
+        }
+
         console.log(types);
         $scope.result = ""
         return $scope.events = [
@@ -77,4 +81,6 @@ angular.module('myApp').controller('mainController', function ($scope) {
 //            return response.data;
 //        });
     }
+
+    $scope.find();
 });
