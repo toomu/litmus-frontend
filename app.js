@@ -44,7 +44,15 @@ console.log('Magic happens on port ' + port);
 
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/mean-dev1');
+//mongoose.connect('mongodb://localhost/mean-dev1');
+
+var db = mongoose.connect('mongodb://toomu:toomu@ds039880.mongolab.com:39880/alienadventures');
+
+//ds039880.mongolab.com:39880/alienadventures -u <dbuser> -p <dbpassword>
+
+
+
+
 var Schema = mongoose.Schema;
 var EventSchema = new Schema({
     created: {

@@ -1,6 +1,7 @@
+// run mongo ds039880.mongolab.com:39880/alienadventures -u toomu -p toomu < dbReset.mongo
 //  run 'mongo < dbReset.mongo' to reset db.
-use mean-dev1;
-db.dropDatabase();
+//use mean-dev1;
+db.events.remove();
 //db.events.insert({ city: 'Amsterdam', 'event': 'Swimming', 'price': '1000', days: '1', type: 'water'});
 //db.events.insert({ city: 'Bangalore', 'event': 'Swimming', 'price': '1000', days: '1', type: 'water'});
 //db.events.insert({ city: 'Hyderabad', 'event': 'Swimming', 'price': '1000', days: '1', type: 'water'});
