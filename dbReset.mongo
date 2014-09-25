@@ -1,11 +1,24 @@
 //  run 'mongo < dbReset.mongo' to reset db.
 use mean-dev1;
 db.dropDatabase();
-db.events.insert({ city: 'Amsterdam', 'event': 'Swimming', 'price': '1000', days: '1', type: 'water'});
-db.events.insert({ city: 'Bangalore', 'event': 'Swimming', 'price': '1000', days: '1', type: 'water'});
-db.events.insert({ city: 'Hyderabad', 'event': 'Swimming', 'price': '1000', days: '1', type: 'water'});
-db.events.insert({ city: 'Vizag', 'event': 'Swimming', 'price': '1000', days: '1', type: 'water'});
-db.events.insert({ city: 'New York', 'event': 'kayaking', 'price': '1000', days: '1', type: 'water'});
-db.events.insert({ city: 'Seattle', 'event': 'Boat ride', 'price': '1000', days: '1', type: 'water'});
-db.events.insert({ city: 'Melbourne', 'event': 'Desert ride', 'price': '1000', days: '1', type: 'land'});
-db.events.insert({ city: 'Sydney', 'event': 'Swimming', 'price': '5000', days: '1', type: 'water'});
+//db.events.insert({ city: 'Amsterdam', 'event': 'Swimming', 'price': '1000', days: '1', type: 'water'});
+//db.events.insert({ city: 'Bangalore', 'event': 'Swimming', 'price': '1000', days: '1', type: 'water'});
+//db.events.insert({ city: 'Hyderabad', 'event': 'Swimming', 'price': '1000', days: '1', type: 'water'});
+//db.events.insert({ city: 'Vizag', 'event': 'Swimming', 'price': '1000', days: '1', type: 'water'});
+//db.events.insert({ city: 'New York', 'event': 'kayaking', 'price': '1000', days: '1', type: 'water'});
+//db.events.insert({ city: 'Seattle', 'event': 'Boat ride', 'price': '1000', days: '1', type: 'water'});
+//db.events.insert({ city: 'Melbourne', 'event': 'Desert ride', 'price': '1000', days: '1', type: 'land'});
+//db.events.insert({ city: 'Sydney', 'event': 'Swimming', 'price': '5000', days: '1', type: 'water'});
+            db.events.insert({ city: 'Amsterdam', 'event': 'Swimming', 'price': '1000', days: '1', type: 'water'})
+            db.events.insert({ city: 'Bangalore', 'event': 'Swimming', 'price': '1000', days: '1', type: 'water'})
+            db.events.insert({ city: 'Hyderabad', 'event': 'Swimming', 'price': '1000', days: '1', type: 'water'})
+            db.events.insert({ city: 'Melbourne', 'event': 'Desert ride', 'price': '1000', days: '1', type: 'land'})
+            db.events.insert({ city: 'Sydney', 'event': 'Swimming', 'price': '5000', days: '1', type: 'water'})
+            db.events.insert({ city: 'Sydney', 'event': 'Skiing', 'price': '5000', days: '1', type: 'snow'})
+            db.events.insert({ city: 'Dubai', 'event': 'Paragliding', 'price': '5000', days: '1', type: 'air'})
+            db.events.insert({ city: 'Tokyo', 'event': 'Skydiving', 'price': '5000', days: '1', type: 'air'})
+            db.events.insert({ city: 'Delhi', 'event': 'Go karting', 'price': '5000', days: '1', type: 'land'})
+            db.events.insert({ city: 'Manila', 'event': 'Mountain Biking', 'price': '5000', days: '1', type: 'land'})
+            db.events.insert({ city: 'Moscow', 'event': 'Ice Climbing', 'price': '5000', days: '1', type: 'snow'})
+            db.events.insert({ city: 'Gotham', 'event': 'Shooting', 'price': '5000', days: '1', type: 'land'})
+            db.events.insert({ city: 'Bangalore', 'event': 'paintball', 'price': '5000', days: '1', type: 'land'})
